@@ -1,6 +1,7 @@
 package com.example.fleetmanager.service;
 
 import com.example.fleetmanager.dto.VehicleDto;
+
 import java.util.List;
 
 public interface VehicleService {

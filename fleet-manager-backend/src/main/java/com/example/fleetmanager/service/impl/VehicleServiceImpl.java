@@ -1,6 +1,7 @@
 package com.example.fleetmanager.service.impl;
 
 import com.example.fleetmanager.dto.VehicleDto;
+import com.example.fleetmanager.entity.Maintenance;
 import com.example.fleetmanager.entity.Vehicle;
 import com.example.fleetmanager.mapper.VehicleMapper;
 import com.example.fleetmanager.repository.VehicleRepository;

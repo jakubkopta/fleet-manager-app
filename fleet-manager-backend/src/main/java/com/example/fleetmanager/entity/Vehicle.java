@@ -1,5 +1,7 @@
 package com.example.fleetmanager.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,5 +22,12 @@ public class Vehicle {
     @Column(nullable = false, unique = true)
     private String plateNumber;
     private String description;
-    private boolean available = true;
+    private Boolean available = true;
+    @OneToOne(mappedBy = "vehicle", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private Maintenance maintenance;
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    @JsonBackReference
+    private User user;
 }

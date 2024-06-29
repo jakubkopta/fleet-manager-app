@@ -11,7 +11,10 @@ public class VehicleMapper {
                 vehicleDto.getModel(),
                 vehicleDto.getYear(),
                 vehicleDto.getPlateNumber(),
-                vehicleDto.getStatus()
+                vehicleDto.getDescription(),
+                vehicleDto.getAvailable(),
+                vehicleDto.getMaintenance(),
+                vehicleDto.getUser()
         );
     }
 
@@ -22,7 +25,10 @@ public class VehicleMapper {
                 vehicle.getModel(),
                 vehicle.getYear(),
                 vehicle.getPlateNumber(),
-                vehicle.getStatus()
+                vehicle.getDescription(),
+                vehicle.getAvailable(),
+                vehicle.getMaintenance(),
+                vehicle.getUser()
         );
     }
 }

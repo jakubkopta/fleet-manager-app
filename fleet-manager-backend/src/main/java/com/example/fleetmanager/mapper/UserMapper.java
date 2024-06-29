@@ -10,7 +10,9 @@ public class UserMapper {
                 userDto.getFirstName(),
                 userDto.getLastName(),
                 userDto.getEmail(),
-                userDto.getPhoneNumber()
+                userDto.getPhoneNumber(),
+                userDto.getVehicleTaken(),
+                userDto.getAdmin()
         );
     }
 
@@ -20,7 +22,9 @@ public class UserMapper {
                 user.getFirstName(),
                 user.getLastName(),
                 user.getEmail(),
-                user.getPhoneNumber()
+                user.getPhoneNumber(),
+                user.getVehicleTaken(),
+                user.getAdmin()
         );
     }
 }
